@@ -2453,6 +2453,7 @@
 
     <!-- SidebarNavigation / MainActivity -->
     <string name="nav_home">Início</string>
+    <string name="nav_live_tv">TV ao vivo</string>
     <string name="nav_discover">Descobrir</string>
     <string name="nav_search">Busca</string>
     <string name="nav_library">Biblioteca</string>
@@ -2460,6 +2461,18 @@
     <string name="nav_movies">Filmes</string>
     <string name="nav_series">Séries</string>
     <string name="nav_settings">Ajustes</string>
+    <string name="live_tv_title">TV ao vivo</string>
+    <string name="live_tv_filter_addon">Complemento</string>
+    <string name="live_tv_filter_category">Categoria</string>
+    <string name="live_tv_filter_all_addons">Todos os complementos</string>
+    <string name="live_tv_filter_all_categories">Todas as categorias</string>
+    <string name="live_tv_no_addons_title">Nenhum complemento de canais</string>
+    <string name="live_tv_no_addons_subtitle">Instale um complemento que forneça catálogos de canais de TV.</string>
+    <string name="live_tv_no_channels_title">Nenhum canal disponível</string>
+    <string name="live_tv_no_channels_subtitle">Os catálogos de canais instalados não retornaram canais.</string>
+    <string name="live_tv_no_filtered_channels">Nenhum canal corresponde aos filtros.</string>
+    <string name="live_tv_load_failed">Não foi possível carregar os canais de TV.</string>
+    <string name="live_tv_retry">Tentar novamente</string>
     <string name="action_select">Selecionar</string>
     <string name="settings_rounded_ui">Interface Arredondada</string>
     <string name="cd_expand_sidebar">Expandir menu lateral</string>

@@ -36,6 +36,7 @@ import com.nuvio.tv.ui.screens.home.HomeScreen
 import com.nuvio.tv.ui.screens.addon.AddonManagerScreen
 import com.nuvio.tv.ui.screens.addon.CatalogOrderScreen
 import com.nuvio.tv.ui.screens.library.LibraryScreen
+import com.nuvio.tv.ui.screens.livetv.LiveTvScreen
 import com.nuvio.tv.ui.screens.player.PlayerExitReason
 import com.nuvio.tv.ui.screens.player.PlayerScreen
 import com.nuvio.tv.ui.screens.player.PostPlayRecommendation
@@ -1219,6 +1220,25 @@ private fun PlaybackNavHost(
                             itemType = itemType,
                             addonBaseUrl = addonBaseUrl,
                             heroBackdropUrl = heroBackdrop
+                        )
+                    )
+                }
+            )
+        }
+
+        composable(Screen.LiveTv.route) {
+            LiveTvScreen(
+                showBuiltInHeader = !hideBuiltInHeaders,
+                onChannelSelected = { channel ->
+                    navController.navigate(
+                        Screen.Stream.createRoute(
+                            videoId = channel.id,
+                            contentType = channel.apiType,
+                            title = channel.name,
+                            contentId = channel.id,
+                            poster = channel.poster,
+                            backdrop = channel.backdropUrl,
+                            logo = channel.logo
                         )
                     )
                 }
